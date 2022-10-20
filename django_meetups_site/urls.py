@@ -20,6 +20,8 @@ from django_meetups_site import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('meetups.urls')),
+    
 ]
 
 if settings.DEBUG:
