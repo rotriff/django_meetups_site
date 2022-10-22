@@ -7,7 +7,7 @@
 body {
     font-family: 'Open Sans', 'Lato', sans-serif;
   margin: 0;
-  background-color: #c0c0c0;
+  background-color: #f5efe6;
   color: #000000;
 }
 
@@ -16,7 +16,7 @@ h2,
 h3 {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: #002366;
+  color: black;
 }
 
 #main-header {
@@ -33,6 +33,6 @@ h3 {
     font-size: 3rem;
     font-family: 'Open Sans', 'Lato', sans-serif;
     text-decoration: none;
-    color: #002366;
+    color: black;
     font-weight: bold;
 }

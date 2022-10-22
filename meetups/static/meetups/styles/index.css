@@ -11,7 +11,7 @@ section {
   
   .meetup-item {
     margin: 1rem 0;
-    background-color: #002366;
+    background-color: #7895B2;
     padding: 2rem;
     color: white;
     border-radius: 4px;
@@ -50,13 +50,13 @@ section {
   }
   
   .meetup-actions .btn {
-    background-color: #4169E1;
-    border-color: #4169E1;
-    color: #002366;
+    background-color: #aebdca;
+    border-color: #e8dfca;
+    color: black;
     padding: 0.75rem 2rem;
   }
   
   .meetup-actions .btn:hover {
-    background-color: #418ce1;
-    border-color: #418ce1;
+    background-color: #e8dfca;
+    border-color: #aebdca;
   }
