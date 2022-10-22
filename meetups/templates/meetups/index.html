@@ -4,33 +4,24 @@
 {% block title %}All Meetups{% endblock title %}
 
 {% block css_files %}
-<link rel="stylesheet" href="{% static "meetups/styles/index.css"%}">
+    <link rel="stylesheet" href="{% static "meetups/styles/index.css"%}">
 {% endblock %}
 
+{% block main_heading %}
+    Great meetups ahead!
+{% endblock main_heading %}
+
+{% block header_content %}
+    <p>Find the one that suits you!</p>
+{% endblock header_content %}
+
 {% block content %}
-<main>
     <section>
         <h2>Upcoming meetups</h2>
         <ol>
             {% for meetup in meetups %}
-                <li class="meetup-item">
-                    <article>
-                        <div class="meetup-summary">
-                            <div class="meetup-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="meetup-details">
-                                <h3>{{ meetup.title }}</h3>
-                                <address>{{ meetup.location }}</address>
-                            </div>
-                        </div>
-                        <div class="meetup-actions">
-                            <a href="" class="btn">More Details</a>
-                        </div>
-                    </article>
-                </li>
+               {% include 'meetups/includes/single-meetup.html' with title=meetup.title location=meetup.location slug=meetup.slug%}
             {% endfor %}
         </ol>
     </section>
-</main>
 {% endblock content %}

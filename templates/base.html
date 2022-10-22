@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock title %}</title>
+    <title>{% block title %}My Meetups{% endblock title %}</title>
     <link rel="stylesheet" href="{% static "base.css"%}">
     {% block css_files %}{% endblock %}
 </head>
@@ -14,10 +14,12 @@
     <header id="main-header">
         <nav>
             <a href="" id="main-logo">DjangoMeetups</a>
-            <h1>Great meetups ahead!</h1>
-            <p>Find the one that suits you!</p>
+            <h1> {% block main_heading %}{% endblock main_heading %}</h1>
+            {% block header_content %}{% endblock header_content %}
         </nav>
     </header>
- {% block content %}{% endblock content %}   
+    <main>
+        {% block content %}{% endblock content %}   
+    </main>
 </body>
 </html>

@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="{% static "meetups/styles/meetup-detail.css"%}">
 {% endblock %}
 
+{% block main_heading %}
+    {{ meetup_title }}
+{% endblock main_heading %}
+
+{% block header_content %}
+    <p>{{ meetup_description }}</p>
+{% endblock header_content %}
+
 {% block content %}
-    <main>
         <article>
             <img src="" alt="">
 
@@ -30,5 +37,4 @@
                 FORM
             </section>
         </article>
-    </main>
 {% endblock content %}
