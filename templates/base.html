@@ -13,7 +13,7 @@
 <body>
     <header id="main-header">
         <nav>
-            <a href="" id="main-logo">DjangoMeetups</a>
+            <a href="{% url "index-meetups" %}" id="main-logo">DjangoMeetups</a>
             <h1> {% block main_heading %}{% endblock main_heading %}</h1>
             {% block header_content %}{% endblock header_content %}
         </nav>
