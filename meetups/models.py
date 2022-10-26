@@ -23,7 +23,7 @@ class Meetup(models.Model):
     slug = models.SlugField(unique=True)
     description = models.TextField()
     image = models.ImageField(upload_to='images')
-    location = models.ForeignKey(Location, on_delete=models.CASCADE, related_name='location')
+    location = models.ForeignKey(Location, on_delete=models.CASCADE, related_name='meetups')
     participants = models.ManyToManyField(Participant, blank=True, null=True)
 
     def __str__(self):

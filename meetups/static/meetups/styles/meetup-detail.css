@@ -86,3 +86,22 @@ article {
     margin-bottom: 0.5rem;
     color: #880824;
   }
+
+
+button,
+.btn {
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: #7895B2;
+  border: 1px solid #7895B2;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #aebdca;
+  border-color: #aebdca;
+}

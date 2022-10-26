@@ -5,5 +5,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index-meetups'),
+    path('success', views.confirm_registration, name='confirm-registration'),
     path('<slug:meetup_slug>', views.meetup_details, name='meetup-detail')
 ]
